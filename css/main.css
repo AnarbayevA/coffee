@@ -1,5 +1,42 @@
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('./../fonts/fraunces-v10-latin-regular.woff2') format('woff2'), 
+         url('./../fonts/fraunces-v10-latin-regular.woff') format('woff'); 
+  }
+
+  @font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('./../fonts/fraunces-v10-latin-900.woff2') format('woff2'), 
+         url('./../fonts/fraunces-v10-latin-900.woff') format('woff'); 
+  }
+
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('./../fonts/barlow-v5-latin-regular.woff2') format('woff2'),
+         url('./../fonts/barlow-v5-latin-regular.woff') format('woff'); 
+  }
+
+  @font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('./../fonts/barlow-v5-latin-700.woff2') format('woff2'),
+         url('./../fonts/barlow-v5-latin-700.woff') format('woff'); 
+  }
+
 *{
     box-sizing: border-box;
+    font-family: 'Barlow', 'Fraunces', 'sans-serif';
 }
 .body {
     margin: 0;
@@ -7,7 +44,8 @@
     font-family: ;
 }
 
-.header {
+.header{
+    margin-top: 20px;
 }
 
 .visually-hidden {
@@ -21,16 +59,42 @@
   }
 
 .contain {
+    max-width: 1320px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .header-contain {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
 }
 
 .header-image-logo {
+    width: 236px;
+    height: 26px;
+    vertical-align: middle;
 }
 
 .navigate {
+    margin-right: -16px;
+    margin-left: -16px;
 }
 
 .navigate-link {
+    font-family: Barlow;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+    text-decoration: none;
+    margin-right: 16px;
+    margin-left: 16px;
 }
