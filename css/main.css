@@ -213,6 +213,39 @@
     color: #333D4B;
 }
 
+/* ____Footer____ */
 
+.footer {
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#2C343E;
+    margin-bottom: 30px;
+    
+}
+
+.footer-left-side {
+}
+
+.header-image-logo {
+}
+
+.footer-list {
+}
+
+.footer-item {
+}
+
+.footer-item-link {
+}
+
+.footer-right-side {
+}
+
+.footer-app-link {
+}
 
 
