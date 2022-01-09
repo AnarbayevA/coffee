@@ -163,7 +163,7 @@
 .container-about {
     display: flex;
     align-items: center;
-    background-image: url(./../images/background-types-coffee.png);
+    background-image: url("./../images/background-types-coffee.png");
     background-repeat: no-repeat;
     background-position: calc(50%) 0; 
 }  
@@ -228,18 +228,36 @@
 }
 
 .footer-left-side {
+    max-width: 622px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.header-image-logo {
+.coffe-logo-bg {
+    
 }
 
 .footer-list {
+    display: flex;
+    align-items: center;
 }
 
 .footer-item {
+    list-style-type: none;
+    margin: 0;
 }
 
 .footer-item-link {
+    text-decoration: none;
+    font-family: Barlow;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
 }
 
 .footer-right-side {
@@ -248,4 +266,97 @@
 .footer-app-link {
 }
 
+/* ____SERVISES____ */
 
+.servises {
+    margin-bottom: 380px;
+}
+
+.servises__container {
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #282F38;
+    border-radius: 8px;
+}
+
+.servises__hidden {
+    margin: 0;
+    padding: 0;
+    font-family: Fraunces;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #FEFCF7;
+    margin-bottom: 32px;
+    margin-top: 100px;
+}
+
+.servises__text {
+    max-width: 540px;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color:#FEFCF7;
+    opacity: 0.8;
+    margin-bottom: 86px;
+}
+
+.servises__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    margin-bottom: -180px;  
+}
+
+.servises__item {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 72px 48px 48px 47px;
+    background-color: #0E8784;
+    border-radius: 8px;
+}
+
+.servises__logo1 {
+    max-width: 71px;
+    height: 72px;
+}
+
+.servises__logo2 {
+    max-width: 72px;
+    height: 72px;
+}
+
+.servises__logo3 {
+    max-width: 72px;
+    height: 50px;
+}
+
+.servises__item-hidden{
+    font-family: Fraunces;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;    
+    text-align: center;
+    color: #FEFCF7;
+}
+
+.servises__item-text {
+    font-family: Barlow;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FEFCF7;
+}
