@@ -66,7 +66,7 @@
     padding-right: 20px;
 }
 
-.header-contain {
+.header__container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -74,18 +74,18 @@
     margin-bottom: 44px;
 }
 
-.header-image-logo {
+.header__logo {
     width: 236px;
     height: 26px;
     vertical-align: middle;
 }
 
-.navigate {
+.header__nav {
     margin-right: -16px;
     margin-left: -16px;
 }
 
-.navigate-link {
+.nav__link {
     font-family: Barlow;
     font-weight: bold;
     font-size: 12px;
@@ -98,6 +98,10 @@
     margin-left: 16px;
 }
 
+.nav__link-hover:hover{
+    color: #333D4B;
+}
+
 /* _____Main_____ */
 
 .hero {
@@ -105,23 +109,26 @@
 
 }
 
-.hero-container {
+.hero__container {
     display: flex;
     align-items: center;
+    border-radius: 10px;
     background-image: url(./../images/hero-background.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1280px 600px;
-    height: 600px;
+    background-size: cover;
+    
 
 }
 
-.hero-inner {
+.hero__inner {
     max-width: 493px;
     margin-left: 86px;
+    padding-top: 117px ;
+    padding-bottom: 116px;
 }
 
-.hero-hidden {
+.hero__hidden {
     margin-top: 0;
     margin-bottom: 0;
     font-family: Fraunces;
@@ -131,7 +138,7 @@
     color: #FEFCF7;
 }
 
-.hero-text{
+.hero__text{
     max-width: 435px;
     font-family: Barlow;
     font-weight: normal;
@@ -149,26 +156,31 @@
     font-family: Fraunces;
     font-weight: 900;
     font-size: 18px;
+    line-height: 25px;
     text-align: center;
     color: #FEFCF7;
 }
 
-/* ____Types of coffee_____ */
-
-.types-coffee-section {
-    margin-bottom: 200px;
-    
+.hero__button-hover:hover{
+    background: #66D2CF;
 }
 
-.container-about {
+/* ____OUR COLLECTION_____ */
+
+.collection{
+    margin-bottom: 200px;
+}
+
+.collection__container {
     display: flex;
     align-items: center;
     background-image: url("./../images/background-types-coffee.png");
     background-repeat: no-repeat;
-    background-position: calc(50%) 0; 
+    background-position: calc(50%) -62px;
+    padding-top: 62px;
 }  
 
-.types-coffee-list {
+.collection__list {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -176,10 +188,9 @@
     flex-wrap: wrap;
     margin-right: auto; 
     margin-left: auto;
-    padding-top: 62px;
 }
 
-.types-coffe-item {
+.collection__item {
     max-width: 255px;
     display: flex;
     flex-direction: column;
@@ -189,13 +200,13 @@
     margin-left: 15px;
 }
 
-.pack-coffee-image {
+.collection__item__image {
     width: 255px;
     height: 193px;
     margin-bottom: 67px;
 }
 
-.name-coffee {
+.collection__hidden  {
     font-family: Fraunces;
     font-weight: 900;
     font-size: 24px;
@@ -204,7 +215,7 @@
     color: #333D4B;
 }
 
-.about-coffee {
+.collection__text {
     font-family: Barlow;
     font-weight: normal;
     font-size: 16px;
@@ -213,58 +224,7 @@
     color: #333D4B;
 }
 
-/* ____Footer____ */
 
-.footer {
-}
-
-.footer-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color:#2C343E;
-    margin-bottom: 30px;
-    
-}
-
-.footer-left-side {
-    max-width: 622px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.coffe-logo-bg {
-    
-}
-
-.footer-list {
-    display: flex;
-    align-items: center;
-}
-
-.footer-item {
-    list-style-type: none;
-    margin: 0;
-}
-
-.footer-item-link {
-    text-decoration: none;
-    font-family: Barlow;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    letter-spacing: 0.923077px;
-    text-transform: uppercase;
-    color: #83888F;
-}
-
-.footer-right-side {
-}
-
-.footer-app-link {
-}
 
 /* ____SERVISES____ */
 
@@ -360,3 +320,78 @@
     text-align: center;
     color: #FEFCF7;
 }
+
+/* ____Footer____ */
+
+.footer{
+    margin-bottom: 135px;
+}
+
+.footer__container {
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    background-color:#2C343E;
+    padding: 47px 85px 49px 85px ;
+    
+}
+
+.footer__left-side {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__logo-link{
+    text-decoration: none;
+    margin-right: 103px;
+}
+
+.footer__logo-image{
+    width: 236px;
+    height: 26px;
+    vertical-align: middle;
+}
+
+.footer__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer__item {
+    margin-right: 16px;
+    margin-left: 16px;
+    list-style-type: none;
+}
+
+.footer__item-link {
+    text-decoration: none;
+    font-family: Barlow;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+}
+.footer__item-link-hover:hover{
+    color: #FEFCF7;
+}
+
+.footer__right-side {
+    max-width: 168px;
+    margin-right: -12px;
+}
+
+.footer__app-link {
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.right-side__image{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}  
