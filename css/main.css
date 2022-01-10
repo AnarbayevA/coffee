@@ -37,6 +37,7 @@
 *{
     box-sizing: border-box;
 }
+
 .body {
     margin: 0;
     padding: 0;
@@ -55,7 +56,7 @@
     position: absolute;
     white-space: nowrap;
     width: 1px;
-  }
+}
 
 .container {
     max-width: 1320px;
@@ -106,7 +107,6 @@
 
 .hero {
     margin-bottom: 236px;
-
 }
 
 .hero__container {
@@ -117,8 +117,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
-
 }
 
 .hero__inner {
@@ -223,8 +221,6 @@
     text-align: center;
     color: #333D4B;
 }
-
-
 
 /* ____SERVISES____ */
 
@@ -332,8 +328,7 @@
     display: flex;
     justify-content: space-between;
     background-color:#2C343E;
-    padding: 47px 85px 49px 85px ;
-    
+    padding: 47px 85px 49px 85px ; 
 }
 
 .footer__left-side {
@@ -376,6 +371,7 @@
     text-transform: uppercase;
     color: #83888F;
 }
+
 .footer__item-link-hover:hover{
     color: #FEFCF7;
 }
